@@ -19,6 +19,8 @@ echo "WSL の DNS 設定ファイル (/etc/resolv.conf) を作成中..."
 rm -f /etc/resolv.conf
 cat << 'EOF' > /etc/resolv.conf
 nameserver 8.8.8.8
+nameserver 1.1.1.1
+options timeout:2 attempts:3
 EOF
 
 # echo "AlmaLinux をアップデート..."

@@ -15,9 +15,7 @@
 
 ### 環境構築
 ```
-wsl --install AlmaLinux-10 --name AlmaLinux-10-Dotnet10 --no-launch
-wsl -u root -d AlmaLinux-10-Dotnet10 -- ./setup.sh
-wsl -t AlmaLinux-10-Dotnet10
+$n="AlmaLinux-10-Dotnet10"; wsl --install AlmaLinux-10 --name $n --no-launch; wsl -u root -d $n -- ./setup.sh; wsl -t $n
 ```
 
 ### 起動
